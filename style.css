@@ -1,0 +1,239 @@
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* ########################## HEADER ##########################
+############################################################ */
+
+.navbar{
+    background-color: white;
+}
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar.expanded {
+    background-color: #050A3A !important;
+    z-index: 1000; /* Un nombre encore plus élevé pour que la navbar expanded apparaisse au-dessus de la navbar normale */
+    height: 500px;
+    position: absolute;
+    width:100vw;
+}
+
+.ulNav {
+    list-style-type: none; /* Supprime les puces/tirets de la liste */
+}
+
+.ulNav > li > a {
+    color: white; /* Couleur du texte */
+    
+  }
+  
+
+.dropdown-menu {
+    background-color: #050A3A !important;
+    color: white;
+    font-size: 40px;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+
+.navbar-toggler{
+    display:none;
+    /* position: absolute; */
+}
+
+@media (max-width: 600px) {
+     .nav-link {
+text-align: end;    }
+}
+/* ########################## FOOTER ##########################
+############################################################ */
+
+footer {
+    height: 260px;
+    background-color: #050A3A !important;
+    color: white;
+    bottom:0px;
+    width: 100vw;
+}
+
+footer .logo {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.containerSocialMedia{
+    bottom: 10px;
+    right: 10px;
+}
+
+@media (max-width: 600px) {
+    footer p {
+        font-size: 10px !important;
+    }
+}
+
+/* ########################## 404 ##########################
+############################################################ */
+.body404{
+    background-color: #050A3A;
+    color: white;
+}
+
+.form-control.border-bottom {
+    border-radius: 0;
+    border-bottom: 1px solid gray !important;
+}
+.input-group-text.bg-white {
+    background-color: white;
+}
+.input-group .form-control {
+    border-right: 0;
+}
+
+
+.card-search{
+    border: none;
+    background-color: inherit;
+}
+
+.font-blue {
+    color: #050A3A !important;
+}
+
+.text-secondary {
+    color: #8A8A8A !important;
+}
+
+.containerSearch > h1 {
+    font-size: 30px;
+  }
+  
+  .containerSearch > h2 {
+    font-size: 20px;
+  }
+  
+  .containerSearch > p {
+    font-size: 15px;
+  }
+
+  @media (max-width: 600px) {
+    .containerSearch > h1 {
+        font-size: 20px;
+      }
+      
+      .containerSearch > h2 {
+        font-size: 15px;
+      }
+      
+      .containerSearch > p {
+        font-size: 10px;
+      }
+}
+
+/* ########################## BLOG SINGLE PAGE ################
+############################################################ */
+
+.bg-inherit {
+    background-color: inherit !important;
+  }
+   
+.bg-green {
+background-color: green !important;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.bg-blue {
+    background-color: #050A3A !important;
+}
+
+.bg-grey {
+    background-color: #F8F8F8!important;
+}
+
+.font-grey {
+    color: grey;
+}
+
+.font-white {
+    color: white;
+}
+
+.cardPostSearchContainern {
+    border: none;
+}
+
+.mt-10 {
+    margin-top: 6rem;
+}
+
+.mb-12 {
+    margin-bottom: 8rem;
+}
+
+.mb-25 {
+    margin-bottom: 11rem;
+}
+
+/* ########################## SERVICES#### ################
+############################################################ */
+
+.h1GradientUnderline {
+    position: relative;
+}
+
+.h1GradientUnderline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right, red, yellow); /* Remplacez par les couleurs de votre choix */
+}
+
+
+/* ########################## ABOUT US #####################
+############################################################ */
+
+.imgHeaderAboutUs {
+    height: 30vw;
+}
+
+.cardTeamsAboutUs{
+    height: 30vw;
+}
+@media (max-width: 600px) {
+    .imgHeaderAboutUs {
+        height: 35vw;
+      }
+
+    .cardTeamsAboutUs {
+    height: 1000px;
+    }
+}
+
+.imgBodyAboutUs {
+    height: 50vw;
+}
+

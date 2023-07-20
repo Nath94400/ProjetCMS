@@ -10,7 +10,7 @@
   {
     echo '<body class="body404">';
   } else{
-    echo '<body>';
+    echo '<body class="bg-white">';
   }
   ?>
     

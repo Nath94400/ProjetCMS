@@ -9,7 +9,7 @@
 
 <div class="container-fluid col-12 mb-5 p-0 mt-3 bg-white justify-content-center" style="width:100vw;">
 
-        <h1 class="mb-5 col-12 p-0 ml-4 ml-md-5" style="font-size:60px;"><?= esc_html(get_the_title()) ?></h1>
+    <h1 class="mb-5 col-12 p-0 ml-4 ml-md-5" style="font-size:60px;"><?= esc_html(get_the_title()) ?></h1>
 
 <?php
 // Afficher les réglages personnalisés pour la section "About Content"
@@ -57,6 +57,8 @@ if (!empty($custom_image_contact)) : ?>
             </div>
         </div>
         <?php endif; ?>
-    </div>
+
+</div>
+</div>
 </div>
 <?php get_footer() ?>

@@ -668,7 +668,7 @@ add_filter('comment_form_fields', function ($fields)
     unset($fields['email']);
 
     // Ajouter un champ e-mail facultatif
-    $fields['email'] = '';
+    $fields['email'] = '<div class=""><input type="text" name="email" id="email" class="form-control bg-inherit border-0" placeholder="Email"></div>';
 
     // Pour supprimer le champ "Site web"
     unset($fields['url']);

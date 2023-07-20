@@ -3,8 +3,8 @@
 
 <h1 class="mb-5" style="font-size:60px;"><?= single_post_title();?></h1>
 
-
-<?php if (have_posts()) : ?>
+<aside><?= get_sidebar('1'); ?></aside>
+        <?php if (have_posts()) : ?>
 
             <?php  ?>
             <div class="cardBlogSinglePage row col-12 col-lg-8 pr-2 pl-md-0 justify-content-center">

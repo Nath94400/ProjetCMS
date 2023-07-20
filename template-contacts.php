@@ -54,13 +54,13 @@ for ($i = 1; $i <= 3; $i++) {
             <div class="imgHeaderContact col-md-3 col-12 p-0">
             </div>
 
-<?php
-if (!empty($custom_image_contact)) : ?>
-        <div class="col-lg-9 col-12 m-0 p-0 mt-2 mb-2 mt-5 mb-md-5">
-            <div class="imgHeaderAboutUs col-lg-12 p-0">
-                <img class="card-img-top" src="<?php echo esc_url($custom_image_contact); ?>" alt="Custom Image contact">
+        <?php
+        if (!empty($custom_image_contact)) : ?>
+            <div class="col-lg-9 col-12 m-0 p-0 mt-2 mb-2 mt-5 mb-md-5">
+                <div class="imgHeaderAboutUs col-lg-12 p-0">
+                    <img class="card-img-top" src="<?php echo esc_url($custom_image_contact); ?>" alt="Custom Image contact">
+                </div>
             </div>
-        </div>
         <?php endif; ?>
 
         <div class="footerContact col-8 mb-5 ml-5 mt-5">

@@ -49,6 +49,11 @@ for ($i = 1; $i <= 3; $i++) {
     <?php endif;
 } ?>
 
+</div>
+
+            <div class="imgHeaderContact col-md-3 col-12 p-0">
+            </div>
+
 <?php
 if (!empty($custom_image_contact)) : ?>
         <div class="col-lg-9 col-12 m-0 p-0 mt-2 mb-2 mt-5 mb-md-5">
@@ -58,7 +63,30 @@ if (!empty($custom_image_contact)) : ?>
         </div>
         <?php endif; ?>
 
-</div>
-</div>
-</div>
+        <div class="footerContact col-8 mb-5 ml-5 mt-5">
+                <h1 class="mb-4 col-12 p-0 " style="font-size:40px;">Write us here</h1>
+                <p class="card-textBlog font-grey col-12 col-md-7 p-0 mb-5" style="font-size:15px">Go! Fon't be shy.</p>
+            
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control border-0 border-bottom border-secondary bg-transparent py-2" id="subject" placeholder="Subject" style="font-size: 15px;">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <input type="email" class="form-control border-0 border-bottom border-secondary bg-transparent py-2" id="email" placeholder="Email" style="font-size: 15px;">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <input type="tel" class="form-control border-0 border-bottom border-secondary bg-transparent py-2" id="phone" placeholder="Phone no" style="font-size: 15px;">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control border-0 border-bottom border-secondary bg-transparent py-2" id="message" rows="5" placeholder="Message" style="font-size: 15px;"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" class="btn btn-link">
+                </form>
+            </div>
+            
+        
+    </div>
+
 <?php get_footer() ?>

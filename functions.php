@@ -275,8 +275,8 @@ function projetcms_customizer_home_banner_controls($wp_customize) {
     ));
 
     // Contrôle pour télécharger l'image
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'custom_image', array(
-        'label' => __('Image personnalisée', 'projetcms'),
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'custom_image_home_banner', array(
+        'label' => __('Bannière home', 'projetcms'),
         'section' => 'home_banner_section',
         'settings' => 'custom_image_home_banner',
     )));
@@ -568,7 +568,7 @@ function projetcms_customizer_contact_content_controls($wp_customize) {
 
         // Contrôle pour le champ de texte 1 de la carte
         $wp_customize->add_control('custom_text_contact_1_' . $i, array(
-            'label' => __('Profession', 'projetcms'),
+            'label' => __('Text 1', 'projetcms'),
             'section' => 'contact_content_section',
             'type' => 'text',
         ));
@@ -582,7 +582,7 @@ function projetcms_customizer_contact_content_controls($wp_customize) {
 
         // Contrôle pour le champ de texte 2 de la carte
         $wp_customize->add_control('custom_text_contact_2_' . $i, array(
-            'label' => __('Phone', 'projetcms'),
+            'label' => __('Text 2', 'projetcms'),
             'section' => 'contact_content_section',
             'type' => 'text',
         ));

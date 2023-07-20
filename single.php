@@ -3,7 +3,7 @@
 <div class="container containerBlogSinglePage bg-white col-12 p-xl-5 p-3">
     <h1 class="mb-5" style="font-size:60px;"><?= the_title()?></h1>
 
-    <?= get_sidebar('1'); ?>
+    <aside><?= get_sidebar('1'); ?></aside>
 
         <div class="cardBlogSinglePage col-11 col-lg-8 bg-white pr-2 pl-md-0 mx-auto">
             <div class="col-12 p-0">
